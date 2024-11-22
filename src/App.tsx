@@ -28,6 +28,8 @@ function App() {
             <Route path="/book-demo" element={<BookDemoPage />} />
             <Route path="/legal/privacy" element={<PrivacyPage />} />
             <Route path="/legal/terms" element={<TermsPage />} />
+            {/* 404 Fallback */}
+            <Route path="*" element={<div>Page Not Found</div>} />
           </Routes>
         </main>
         <Footer />
